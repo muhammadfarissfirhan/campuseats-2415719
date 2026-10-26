@@ -1,0 +1,694 @@
+[
+  {
+    "id": "2415719-Fariss Cafe",
+    "name": "Yiss Cafe",
+    "location": "Mahallah Faruq, Block F",
+    "openHours": "7:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2415719-my-1",
+        "name": "Nasi Ayam Gepuk",
+        "description": "Smashed fried chicken with sambal and rice",
+        "price": 7.5,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2415719-my-4",
+        "name": "Nasi Goreng Kampung",
+        "description": "Traditional village-style fried rice",
+        "price": 6.5,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2415719-my-5",
+        "name": "Nasi Lemak Ayam Goreng",
+        "description": "Coconut milk rice with fried chicken",
+        "price": 8.0,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2415719-my-9",
+        "name": "Nasi Goreng Cina",
+        "description": "Chinese-style non-spicy fried rice",
+        "price": 6.0,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2415719-my-10",
+        "name": "Nasi Goreng Pattaya",
+        "description": "Fried rice wrapped in a thin omelette",
+        "price": 7.5,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2415719-my-11",
+        "name": "Nasi Paprik Ayam",
+        "description": "White rice with spicy chicken paprik stir-fry",
+        "price": 8.5,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2415719-my-12",
+        "name": "Nasi Kerabu",
+        "description": "Blue herb rice with fried chicken and crackers",
+        "price": 9.0,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2415719-my-13",
+        "name": "Nasi Goreng Seafood",
+        "description": "Fried rice with prawns and squid",
+        "price": 9.5,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "2415719-my-2",
+        "name": "Roti Nan Cheese",
+        "description": "Nan bread with cheese",
+        "price": 6.0,
+        "category": "Bread",
+        "available": true
+      },
+      {
+        "id": "2415719-my-6",
+        "name": "Roti Canai",
+        "description": "Classic flatbread served with dhal",
+        "price": 1.5,
+        "category": "Bread",
+        "available": true
+      },
+      {
+        "id": "2415719-my-14",
+        "name": "Roti Telur",
+        "description": "Flatbread folded with beaten egg and onion",
+        "price": 2.5,
+        "category": "Bread",
+        "available": true
+      },
+      {
+        "id": "2415719-my-15",
+        "name": "Roti Boom",
+        "description": "Smaller, thicker, and sweeter flatbread",
+        "price": 3.0,
+        "category": "Bread",
+        "available": true
+      },
+      {
+        "id": "2415719-my-16",
+        "name": "Murtabak Ayam",
+        "description": "Stuffed pancake with minced chicken and egg",
+        "price": 6.0,
+        "category": "Bread",
+        "available": true
+      },
+      {
+        "id": "2415719-my-17",
+        "name": "Roti Tisu",
+        "description": "Paper-thin, crispy, tall flatbread coated with sugar",
+        "price": 4.0,
+        "category": "Bread",
+        "available": true
+      },
+      {
+        "id": "2415719-my-18",
+        "name": "Roti Bakar Kaya",
+        "description": "Toasted bread with kaya and butter",
+        "price": 2.5,
+        "category": "Bread",
+        "available": true
+      },
+      {
+        "id": "2415719-my-19",
+        "name": "Roti Nan Garlic",
+        "description": "Nan bread topped with minced garlic and butter",
+        "price": 5.0,
+        "category": "Bread",
+        "available": true
+      },
+      {
+        "id": "2415719-my-3",
+        "name": "Air Teh O Ais",
+        "description": "Iced Tea",
+        "price": 2.5,
+        "category": "Drinks",
+        "available": false
+      },
+      {
+        "id": "2415719-my-7",
+        "name": "Milo Ais",
+        "description": "Iced chocolate malt drink",
+        "price": 3.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-my-8",
+        "name": "Teh Tarik",
+        "description": "Hot pulled milk tea",
+        "price": 2.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-my-20",
+        "name": "Sirap Limau",
+        "description": "Rose syrup iced drink with lime",
+        "price": 2.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-my-21",
+        "name": "Nescafe Ais",
+        "description": "Iced milky coffee",
+        "price": 3.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-my-22",
+        "name": "Kopi O Panas",
+        "description": "Hot black coffee with sugar",
+        "price": 2.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-my-23",
+        "name": "Jus Epal",
+        "description": "Freshly squeezed apple juice",
+        "price": 4.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-my-24",
+        "name": "Limau Asam Boi",
+        "description": "Iced lime juice with salted dried plum",
+        "price": 2.5,
+        "category": "Drinks",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "2415719-Alya Cafe",
+    "name": "Alyaa Cafe",
+    "location": "Mahallah Aminah, Ground Floor",
+    "openHours": "8:00 am - 9:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2415719-ami-1",
+        "name": "Grilled Chicken Chop",
+        "description": "Grilled chicken thigh with black pepper sauce and fries",
+        "price": 15.0,
+        "category": "Mains",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-3",
+        "name": "Classic Fish and Chips",
+        "description": "Battered fish fillet served with tartar sauce and chips",
+        "price": 14.5,
+        "category": "Mains",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-4",
+        "name": "Spaghetti Bolognese",
+        "description": "Classic Italian pasta with minced beef and tomato sauce",
+        "price": 12.0,
+        "category": "Mains",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-5",
+        "name": "Creamy Carbonara",
+        "description": "Spaghetti in rich creamy sauce with mushrooms and chicken slice",
+        "price": 13.5,
+        "category": "Mains",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-6",
+        "name": "Cheeseburger",
+        "description": "Homemade beef patty with melted cheese and fries",
+        "price": 11.0,
+        "category": "Mains",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-7",
+        "name": "Macaroni and Cheese",
+        "description": "Baked mac and cheese with a crispy breadcrumb topping",
+        "price": 10.5,
+        "category": "Mains",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-8",
+        "name": "Grilled Lamb Chop",
+        "description": "Juicy lamb chops served with mashed potatoes and mint sauce",
+        "price": 22.0,
+        "category": "Mains",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-9",
+        "name": "Margherita Pizza",
+        "description": "Personal sized pizza with tomato sauce, mozzarella, and basil",
+        "price": 14.0,
+        "category": "Mains",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-10",
+        "name": "Chocolate Lava Cake",
+        "description": "Warm chocolate cake with a gooey center, served with vanilla ice cream",
+        "price": 8.5,
+        "category": "Desserts",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-11",
+        "name": "New York Cheesecake",
+        "description": "Classic creamy cheesecake with a graham cracker crust",
+        "price": 9.0,
+        "category": "Desserts",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-12",
+        "name": "Apple Pie",
+        "description": "Warm baked apple pie with cinnamon",
+        "price": 7.5,
+        "category": "Desserts",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-13",
+        "name": "Classic Waffles",
+        "description": "Crispy waffles topped with maple syrup and butter",
+        "price": 6.5,
+        "category": "Desserts",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-14",
+        "name": "Pancakes",
+        "description": "Fluffy stack of pancakes with fresh berries and syrup",
+        "price": 7.0,
+        "category": "Desserts",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-15",
+        "name": "Tiramisu",
+        "description": "Italian coffee-flavored dessert with mascarpone cheese",
+        "price": 9.5,
+        "category": "Desserts",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-16",
+        "name": "Banana Split",
+        "description": "Fresh banana with trio of ice cream and chocolate syrup",
+        "price": 8.0,
+        "category": "Desserts",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-17",
+        "name": "Vanilla Panna Cotta",
+        "description": "Creamy Italian dessert topped with strawberry coulis",
+        "price": 7.5,
+        "category": "Desserts",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-2",
+        "name": "Iced Strawberry Latte",
+        "description": "Espresso with milk and sweet strawberry puree",
+        "price": 8.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-18",
+        "name": "Hot Cappuccino",
+        "description": "Espresso topped with frothy steamed milk",
+        "price": 7.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-19",
+        "name": "English Breakfast Tea",
+        "description": "Classic hot black tea served with a side of milk",
+        "price": 5.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-20",
+        "name": "Fresh Orange Juice",
+        "description": "100% freshly squeezed orange juice",
+        "price": 6.5,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-21",
+        "name": "Iced Lemon Tea",
+        "description": "Refreshing cold tea with freshly squeezed lemon",
+        "price": 4.5,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-22",
+        "name": "Mocha Frappe",
+        "description": "Ice blended coffee with rich chocolate syrup and whipped cream",
+        "price": 10.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-23",
+        "name": "Hot Chocolate",
+        "description": "Rich and creamy hot cocoa topped with marshmallows",
+        "price": 8.0,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "2415719-ami-24",
+        "name": "Vanilla Milkshake",
+        "description": "Thick and creamy vanilla ice cream shake",
+        "price": 9.0,
+        "category": "Drinks",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "2418793-Faizul-Cafe",
+    "name": "Faizul Cafe",
+    "location": "Mahallah Siddiq, Block A",
+    "openHours": "8:00 am - 11:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2418793-m1",
+        "name": "Nasi Goreng Kampung",
+        "price": 5.0,
+        "category": "Meals",
+        "popular": true,
+        "description": "Fried rice with anchovies and vegetables.",
+        "available": true
+      },
+      {
+        "id": "2418793-m2",
+        "name": "Nasi Goreng Cina",
+        "price": 4.5,
+        "category": "Meals",
+        "popular": true,
+        "description": "Chinese-style fried rice with egg.",
+        "available": true
+      },
+      {
+        "id": "2418793-m3",
+        "name": "Nasi Goreng Pattaya",
+        "price": 6.5,
+        "category": "Meals",
+        "popular": true,
+        "description": "Fried rice wrapped in an egg omelette.",
+        "available": true
+      },
+      {
+        "id": "2418793-m4",
+        "name": "Nasi Goreng USA",
+        "price": 8.0,
+        "category": "Meals",
+        "popular": true,
+        "description": "Fried rice served with meat and egg.",
+        "available": true
+      },
+      {
+        "id": "2418793-m5",
+        "name": "Nasi Goreng Kerabu",
+        "price": 6.0,
+        "category": "Meals",
+        "popular": true,
+        "description": "Aromatic fried rice with fresh herbs.",
+        "available": true
+      },
+      {
+        "id": "2418793-m6",
+        "name": "Nasi Kerabu",
+        "price": 6.0,
+        "category": "Meals",
+        "popular": true,
+        "description": "Blue rice served with herbs and sides.",
+        "available": true
+      },
+      {
+        "id": "2418793-m7",
+        "name": "Nasi Dagang",
+        "price": 6.0,
+        "category": "Meals",
+        "popular": true,
+        "description": "Rice served with rich fish curry.",
+        "available": true
+      },
+      {
+        "id": "2418793-m8",
+        "name": "Nasi Goreng Chicken Chop",
+        "price": 10.67,
+        "category": "Meals",
+        "popular": true,
+        "description": "Fried rice with crispy chicken chop.",
+        "available": true
+      },
+      {
+        "id": "2418793-s1",
+        "name": "Keropok Lekor",
+        "price": 0.5,
+        "category": "Snacks",
+        "popular": true,
+        "description": "Traditional fried fish crackers.",
+        "available": true
+      },
+      {
+        "id": "2418793-s2",
+        "name": "Pisang Goreng Cheese",
+        "price": 5.0,
+        "category": "Snacks",
+        "popular": true,
+        "description": "Crispy fried bananas topped with cheese.",
+        "available": true
+      },
+      {
+        "id": "2418793-s3",
+        "name": "Dubai Chewy Cookies",
+        "price": 15.0,
+        "category": "Snacks",
+        "popular": true,
+        "description": "Rich chocolate cookies with a chewy centre.",
+        "available": true
+      },
+      {
+        "id": "2418793-s4",
+        "name": "Vietnamese Spring Roll",
+        "price": 15.0,
+        "category": "Snacks",
+        "popular": true,
+        "description": "Spring rolls filled with fresh vegetables.",
+        "available": true
+      },
+      {
+        "id": "2418793-s5",
+        "name": "Aiskrim Malaysia",
+        "price": 0.2,
+        "category": "Snacks",
+        "popular": true,
+        "description": "Traditional frozen flavoured ice pops.",
+        "available": true
+      },
+      {
+        "id": "2418793-s6",
+        "name": "Aiskrim Goreng",
+        "price": 1.0,
+        "category": "Snacks",
+        "popular": true,
+        "description": "Crispy fried ice cream dessert.",
+        "available": true
+      },
+      {
+        "id": "2418793-s7",
+        "name": "Shawarma",
+        "price": 7.0,
+        "category": "Snacks",
+        "popular": true,
+        "description": "Wrap filled with meat and vegetables.",
+        "available": true
+      },
+      {
+        "id": "2418793-s8",
+        "name": "Waffle",
+        "price": 5.0,
+        "category": "Snacks",
+        "popular": true,
+        "description": "Golden waffle with a soft centre.",
+        "available": true
+      },
+      {
+        "id": "2418793-d1",
+        "name": "Teh Hijau",
+        "price": 3.0,
+        "category": "Drinks",
+        "popular": true,
+        "description": "Refreshing green tea.",
+        "available": true
+      },
+      {
+        "id": "2418793-d2",
+        "name": "Teh Bunga",
+        "price": 2.5,
+        "category": "Drinks",
+        "popular": true,
+        "description": "Light and fragrant floral tea.",
+        "available": true
+      },
+      {
+        "id": "2418793-d3",
+        "name": "Teh Tarik",
+        "price": 2.5,
+        "category": "Drinks",
+        "popular": true,
+        "description": "Classic Malaysian pulled milk tea.",
+        "available": true
+      },
+      {
+        "id": "2418793-d4",
+        "name": "Teh O Ais",
+        "price": 1.8,
+        "category": "Drinks",
+        "popular": true,
+        "description": "Chilled black tea with ice.",
+        "available": true
+      },
+      {
+        "id": "2418793-d5",
+        "name": "Matcha Strawberry",
+        "price": 7.0,
+        "category": "Drinks",
+        "popular": true,
+        "description": "Matcha blended with sweet strawberry.",
+        "available": true
+      },
+      {
+        "id": "2418793-d6",
+        "name": "Keladi Latte",
+        "price": 6.5,
+        "category": "Drinks",
+        "popular": true,
+        "description": "Creamy latte with taro flavour.",
+        "available": true
+      },
+      {
+        "id": "2418793-d7",
+        "name": "Spanish Latte",
+        "price": 7.0,
+        "category": "Drinks",
+        "popular": true,
+        "description": "Rich espresso with creamy milk.",
+        "available": true
+      },
+      {
+        "id": "2418793-d8",
+        "name": "Americano",
+        "price": 5.0,
+        "category": "Drinks",
+        "popular": true,
+        "description": "Bold espresso with hot water.",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "2410465-kafe-shafiq",
+    "name": "Kafe Shafiq",
+    "location": "IIUM Gombak",
+    "openHours": "08:00 - 22:00",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2410465-m1",
+        "name": "Nasi Lemak Ayam",
+        "price": 7.5,
+        "category": "Food",
+        "popular": true
+      },
+      {
+        "id": "2410465-m2",
+        "name": "Nasi Goreng Kampung",
+        "price": 8.0,
+        "category": "Food",
+        "popular": true
+      },
+      {
+        "id": "2410465-m3",
+        "name": "Mee Goreng",
+        "price": 6.5,
+        "category": "Food",
+        "popular": false
+      },
+      {
+        "id": "2410465-m4",
+        "name": "Chicken Chop",
+        "price": 12.0,
+        "category": "Food",
+        "popular": true
+      },
+      {
+        "id": "2410465-m5",
+        "name": "French Fries",
+        "price": 4.5,
+        "category": "Snacks",
+        "popular": false
+      },
+      {
+        "id": "2410465-m6",
+        "name": "Iced Milo",
+        "price": 3.5,
+        "category": "Drinks",
+        "popular": true
+      },
+      {
+        "id": "2410465-m7",
+        "name": "Iced Lemon Tea",
+        "price": 3.0,
+        "category": "Drinks",
+        "popular": false
+      },
+      {
+        "id": "2410465-m8",
+        "name": "Chocolate Cake",
+        "price": 5.0,
+        "category": "Dessert",
+        "popular": false
+      }
+    ]
+  }
+]
