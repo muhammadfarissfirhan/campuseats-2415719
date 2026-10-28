@@ -1,5 +1,7 @@
-// Shows the last vendors and menu items the user looked at, with a Clear button.
-function RecentlyViewed({ vendors, items, onSelectVendor, onClear }) {
+import { Link } from "react-router";
+
+// Shows recently viewed vendors and items as links, with a Clear button.
+function RecentlyViewed({ vendors, items, onClear }) {
   if (vendors.length === 0 && items.length === 0) return null;
 
   return (
@@ -15,14 +17,9 @@ function RecentlyViewed({ vendors, items, onSelectVendor, onClear }) {
         <div className="chips">
           <span className="muted">Vendors:</span>
           {vendors.map((v) => (
-            <button
-              key={v.id}
-              type="button"
-              className="chip chip-button"
-              onClick={() => onSelectVendor(v.id)}
-            >
+            <Link key={v.id} to={`/vendor/${v.id}`} className="chip">
               {v.name}
-            </button>
+            </Link>
           ))}
         </div>
       )}
@@ -31,9 +28,13 @@ function RecentlyViewed({ vendors, items, onSelectVendor, onClear }) {
         <div className="chips">
           <span className="muted">Items:</span>
           {items.map((item) => (
-            <span key={item.id} className="chip">
+            <Link
+              key={item.id}
+              to={`/vendor/${item.vendorId}`}
+              className="chip"
+            >
               {item.name} · RM {item.price.toFixed(2)}
-            </span>
+            </Link>
           ))}
         </div>
       )}
