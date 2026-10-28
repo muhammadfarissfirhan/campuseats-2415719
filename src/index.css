@@ -306,3 +306,17 @@ body {
   font-family: inherit;
   cursor: pointer;
 }
+
+.nav a.active {
+  text-decoration: underline;
+}
+a.vendor-card {
+  text-decoration: none;
+}
+a.chip {
+  text-decoration: none;
+}
+.order ul {
+  margin: 0.25rem 0;
+  padding-left: 1.25rem;
+}
