@@ -24,3 +24,10 @@
 - What I asked for: how to add the recently viewed feature
 - What I kept, changed or rejected, and why: I kept the answer AI give to me and follow all the instructions. The website works with recently view feature successfully added.
 - One thing the AI got wrong and how I fixed it:
+
+## Week 5
+
+- Tool(s): Claude
+- What I asked for: guide me with the lab 4 instructions and explain it.
+- What I kept, changed or rejected, and why: I kept the answer AI give to me and follow all the instructions. The website works following the lab 4 instructions.
+- One thing the AI got wrong and how I fixed it:
