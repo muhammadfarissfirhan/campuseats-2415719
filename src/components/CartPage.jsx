@@ -10,6 +10,7 @@ function CartPage({ cart, onChangeQty, onRemove, onPlaceOrder }) {
     );
   }
 
+  // Derived with reduce, never stored in state
   const total = cart.reduce((sum, line) => sum + line.item.price * line.qty, 0);
 
   return (
@@ -27,8 +28,6 @@ function CartPage({ cart, onChangeQty, onRemove, onPlaceOrder }) {
         </ul>
         <p className="cart-total">Total: RM {total.toFixed(2)}</p>
       </div>
-
-      {/* Replaced placeholder with actual component */}
       <CheckoutForm onPlaceOrder={onPlaceOrder} />
     </div>
   );

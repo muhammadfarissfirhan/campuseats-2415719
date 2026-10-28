@@ -6,6 +6,7 @@ export function Loading() {
     </p>
   );
 }
+
 export function ErrorMessage({ message, onRetry }) {
   return (
     <div className="card error" role="alert">

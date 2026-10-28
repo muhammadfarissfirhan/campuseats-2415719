@@ -10,18 +10,14 @@ function CartItem({ line, onChangeQty, onRemove }) {
       </div>
       <div className="qty">
         <button type="button" onClick={() => onChangeQty(item.id, -1)}>
-          -
+          −
         </button>
         <span>{qty}</span>
-        {/* Completed TODO: add one */}
         <button type="button" onClick={() => onChangeQty(item.id, 1)}>
           +
         </button>
       </div>
-      {/* Completed TODO: price * qty, 2 decimals */}
       <p className="line-total">RM {(item.price * qty).toFixed(2)}</p>
-
-      {/* Completed TODO: Remove button */}
       <button
         type="button"
         className="link danger"
