@@ -1,9 +1,21 @@
 import { CartContext } from "./cart-context.js";
 import { useLocalStorage } from "../hooks/useLocalStorage.js";
+import { useAuth } from "../hooks/useAuth.js"; // 1. Import useAuth
 
 function CartProvider({ children }) {
-  const [cart, setCart] = useLocalStorage("campuseats-cart", []); // lines of { item, qty }
-  const [orders, setOrders] = useLocalStorage("campuseats-orders", []);
+  const { user } = useAuth(); // 2. Get the logged-in user
+
+  // 3. Create dynamic keys so every user has an isolated cart and order history
+  const cartKey = user
+    ? "campuseats-cart-" + user.uid
+    : "campuseats-cart-guest";
+  const ordersKey = user
+    ? "campuseats-orders-" + user.uid
+    : "campuseats-orders-guest";
+
+  // 4. Pass the dynamic keys into your updated useLocalStorage hook
+  const [cart, setCart] = useLocalStorage(cartKey, []);
+  const [orders, setOrders] = useLocalStorage(ordersKey, []);
 
   // Derived values (not stored)
   const count = cart.reduce((sum, line) => sum + line.qty, 0);

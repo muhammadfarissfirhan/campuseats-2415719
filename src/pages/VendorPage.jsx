@@ -3,13 +3,15 @@ import MenuList from "../components/MenuList.jsx";
 import { Loading, ErrorMessage } from "../components/Status.jsx";
 import { useVendors } from "../hooks/useVendors.js";
 import { useRecentlyViewed } from "../hooks/useRecentlyViewed.js";
+import { useAuth } from "../hooks/useAuth.js";
 
 function VendorPage() {
   const { id } = useParams();
-  const { vendors, loading, error, reload } = useVendors();
+  const { vendors, vendorsLoading, error, reload } = useVendors();
+  const { loading: authLoading } = useAuth();
   const { addItem } = useRecentlyViewed();
 
-  if (loading) return <Loading />;
+  if (vendorsLoading || authLoading) return <Loading />;
   if (error) return <ErrorMessage message={error} onRetry={reload} />;
 
   const vendor = vendors.find((v) => v.id === id);

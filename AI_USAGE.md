@@ -31,3 +31,10 @@
 - What I asked for: guide me with the lab 4 instructions and explain it.
 - What I kept, changed or rejected, and why: I kept the answer AI give to me and follow all the instructions. The website works following the lab 4 instructions.
 - One thing the AI got wrong and how I fixed it:
+
+## Week 6
+
+- Tool(s): Gemini
+- What I asked for: help me to do the "recently viewed items" feature, debugging the log out function and adding the "forgot password" stretch task.
+- What I kept, changed or rejected, and why: I kept the updated useLocalStorage logic that requires explicit saving (setValue) rather than relying on automatic useEffect triggers. I also kept the dynamic storage keys (like "campuseats-cart-" + user.uid). This was necessary because Firebase's slight loading delay was causing the original Week 4 hook to accidentally overwrite user data with guest data
+- One thing the AI got wrong and how I fixed it:
