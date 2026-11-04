@@ -1,33 +1,36 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+
+function readValue(key, initialValue) {
+  try {
+    const item = window.localStorage.getItem(key);
+    return item ? JSON.parse(item) : initialValue;
+  } catch {
+    return initialValue; // bad JSON or storage blocked
+  }
+}
 
 export function useLocalStorage(key, initialValue) {
-  // 1. Helper function to read from local storage safely
-  const readValue = () => {
-    try {
-      const item = window.localStorage.getItem(key);
-      return item ? JSON.parse(item) : initialValue;
-    } catch (error) {
-      return initialValue;
-    }
-  };
+  // Keep the key together with the value, so we know which key the value belongs to
+  const [state, setState] = useState(() => ({
+    key,
+    value: readValue(key, initialValue),
+  }));
 
-  // 2. Set the initial state
-  const [storedValue, setStoredValue] = useState(readValue);
+  // If the key changes (e.g. guest -> logged in), read the new key's data straight away.
+  // Doing this while rendering (not in useEffect) avoids an extra render with old data.
+  let current = state;
+  if (state.key !== key) {
+    current = { key, value: readValue(key, initialValue) };
+    setState(current);
+  }
 
-  // 3. If the key changes (e.g., from Guest to Logged In), read the new data immediately
-  useEffect(() => {
-    setStoredValue(readValue());
-  }, [key]);
-
-  // 4. Custom setter function that updates state AND saves to storage at the exact same time
+  // Updates state AND saves to storage at the same time, like useState's setter
   const setValue = (value) => {
     try {
-      // Allow value to be a function, just like standard useState
       const valueToStore =
-        value instanceof Function ? value(storedValue) : value;
-      setStoredValue(valueToStore);
+        value instanceof Function ? value(current.value) : value;
+      setState({ key, value: valueToStore });
 
-      // Save it safely without a racing useEffect
       if (valueToStore === undefined) {
         window.localStorage.removeItem(key);
       } else {
@@ -38,5 +41,5 @@ export function useLocalStorage(key, initialValue) {
     }
   };
 
-  return [storedValue, setValue];
+  return [current.value, setValue];
 }

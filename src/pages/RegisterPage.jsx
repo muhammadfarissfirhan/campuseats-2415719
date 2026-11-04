@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { useAuth } from "../hooks/useAuth.js";
 import { authErrorMessage } from "../authErrors.js";
-function LoginPage() {
+function RegisterPage() {
   const { register } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -82,4 +82,4 @@ function LoginPage() {
     </section>
   );
 }
-export default LoginPage;
+export default RegisterPage;

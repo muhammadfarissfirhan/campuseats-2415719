@@ -11,6 +11,7 @@ function Header() {
     // Clear the recently viewed items for this specific user
     if (user) {
       localStorage.removeItem("ce-recent-" + user.uid);
+      localStorage.removeItem("ce-recent-vendors-" + user.uid);
     }
 
     await logout();

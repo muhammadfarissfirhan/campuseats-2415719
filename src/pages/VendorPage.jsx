@@ -7,11 +7,11 @@ import { useAuth } from "../hooks/useAuth.js";
 
 function VendorPage() {
   const { id } = useParams();
-  const { vendors, vendorsLoading, error, reload } = useVendors();
+  const { vendors, loading, error, reload } = useVendors();
   const { loading: authLoading } = useAuth();
   const { addItem } = useRecentlyViewed();
 
-  if (vendorsLoading || authLoading) return <Loading />;
+  if (loading || authLoading) return <Loading />;
   if (error) return <ErrorMessage message={error} onRetry={reload} />;
 
   const vendor = vendors.find((v) => v.id === id);
