@@ -15,7 +15,6 @@ function CartProvider({ children }) {
 
   // 4. Pass the dynamic keys into your updated useLocalStorage hook
   const [cart, setCart] = useLocalStorage(cartKey, []);
-  const [orders, setOrders] = useLocalStorage(ordersKey, []);
 
   // Derived values (not stored)
   const count = cart.reduce((sum, line) => sum + line.qty, 0);
@@ -47,29 +46,27 @@ function CartProvider({ children }) {
     setCart((prev) => prev.filter((line) => line.item.id !== itemId));
   }
 
-  function placeOrder(details) {
-    const order = {
-      id: Date.now(),
-      ...details,
-      lines: cart,
-      total,
-    };
-    setOrders((prev) => [order, ...prev]);
+  function clearCart() {
     setCart([]);
   }
 
   const value = {
     cart,
-    orders,
     count,
     total,
     addToCart,
     changeQty,
     removeFromCart,
-    placeOrder,
+    clearCart,
   };
 
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+  return (
+    <CartContext.Provider
+      value={{ cart, total, addToCart, changeQty, removeFromCart, clearCart }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
 }
 
 export default CartProvider;

@@ -6,21 +6,10 @@ import { useRecentlyViewed } from "../hooks/useRecentlyViewed.js";
 
 function HomePage() {
   const { vendors, loading, error, reload } = useVendors();
-  const { vendorIds, itemIds, addVendor, clear } = useRecentlyViewed();
+  const { recentVendors, recentItems, addVendor, clear } = useRecentlyViewed();
 
   if (loading) return <Loading />;
   if (error) return <ErrorMessage message={error} onRetry={reload} />;
-
-  // Turn saved ids back into objects (derived, not stored)
-  const allItems = vendors.flatMap((v) =>
-    v.menu.map((i) => ({ ...i, vendorId: v.id })),
-  );
-  const recentVendors = vendorIds
-    .map((id) => vendors.find((v) => v.id === id))
-    .filter(Boolean);
-  const recentItems = itemIds
-    .map((id) => allItems.find((i) => i.id === id))
-    .filter(Boolean);
 
   return (
     <>

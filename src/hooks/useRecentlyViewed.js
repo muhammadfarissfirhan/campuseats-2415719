@@ -1,38 +1,47 @@
-import { useLocalStorage } from "./useLocalStorage.js";
-import { useAuth } from "./useAuth.js"; // 1. Import useAuth
+import { useEffect, useState } from "react";
+import { useAuth } from "./useAuth.js";
+import {
+  subscribeToRecent,
+  recordRecentVendor,
+  recordRecentItem,
+  clearRecent,
+} from "../services/recent.js";
 
-// Newest first, no duplicates, keep only `max` ids
-function addRecent(list, id, max) {
-  return [id, ...list.filter((x) => x !== id)].slice(0, max);
-}
-
-// Personal feature (digit 9): saved in localStorage so it survives refresh.
 export function useRecentlyViewed() {
-  const { user } = useAuth(); // 2. Get the current user
+  const { user } = useAuth();
+  const [recent, setRecent] = useState({ vendors: [], items: [] });
 
-  // 3. Create dynamic keys based on the user's ID, as required by the lab sheet
-  const itemKey = user ? "ce-recent-" + user.uid : "ce-recent-guest";
-  const vendorKey = user
-    ? "ce-recent-vendors-" + user.uid
-    : "ce-recent-vendors-guest";
+  useEffect(() => {
+    if (!user) {
+      setRecent({ vendors: [], items: [] });
+      return;
+    }
+    const unsubscribe = subscribeToRecent(user.uid, setRecent, (err) =>
+      console.error("Recent listener error:", err),
+    );
+    return unsubscribe;
+  }, [user]);
 
-  const [vendorIds, setVendorIds] = useLocalStorage(vendorKey, []);
-  const [itemIds, setItemIds] = useLocalStorage(itemKey, []);
-
-  function addVendor(id) {
-    if (!user) return; // 4. Guests do not save
-    setVendorIds((prev) => addRecent(prev, id, 3));
+  function addVendor(vendor) {
+    if (!user) return;
+    recordRecentVendor(user.uid, vendor);
   }
 
-  function addItem(id) {
-    if (!user) return; // 4. Guests do not save
-    setItemIds((prev) => addRecent(prev, id, 5));
+  function addItem(item) {
+    if (!user) return;
+    recordRecentItem(user.uid, item);
   }
 
   function clear() {
-    setVendorIds([]);
-    setItemIds([]);
+    if (!user) return;
+    clearRecent(user.uid);
   }
 
-  return { vendorIds, itemIds, addVendor, addItem, clear };
+  return {
+    recentVendors: recent.vendors,
+    recentItems: recent.items,
+    addVendor,
+    addItem,
+    clear,
+  };
 }
